@@ -1,0 +1,24 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "Use this note taker to take notes of anything you need to remember in the future",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentMomot/Note-Taker.git"
+  },
+  "author": "Vincent D Momot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VincentMomot/Note-Taker/issues"
+  },
+  "homepage": "https://github.com/VincentMomot/Note-Taker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "start": "^5.1.0",
+    "uuid": "^8.3.2"
+  }
+}

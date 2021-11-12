@@ -5,7 +5,6 @@ let newNoteBtn;
 let noteList;
 
 if (window.location.pathname === '/notes.html') {
-  console.log("line 8")
   noteTitle = document.querySelector('.note-title');
   noteText = document.querySelector('.note-textarea');
   saveNoteBtn = document.querySelector('.save-note');
@@ -88,8 +87,9 @@ const handleNoteDelete = (e) => {
 
   if (activeNote.id === noteId) {
     activeNote = {};
+    
   }
-
+  console.log(noteId);
   deleteNote(noteId).then(() => {
     getAndRenderNotes();
     renderActiveNote();
@@ -110,7 +110,6 @@ const handleNewNoteView = (e) => {
 };
 
 const handleRenderSaveBtn = () => {
-  console.log("index has loaded")
   if (!noteTitle.value.trim() || !noteText.value.trim()) {
     hide(saveNoteBtn);
   } else {
@@ -176,7 +175,6 @@ const renderNoteList = async (notes) => {
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
 if (window.location.pathname === '/notes.html') {
-  console.log("test")
   saveNoteBtn.addEventListener('click', handleNoteSave);
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);

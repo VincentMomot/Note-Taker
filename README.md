@@ -13,8 +13,9 @@ This note taker is used to take notes of anything you need to remember in the fu
 * Better understanding of express.js GET, POST, and DELETE
 * How to modularize files with the express framework
 * Writing and deleting files from a .json file so that data persists
+* Depoying applications to Heroku
 
-[This is a link to the deployed Heroku site](...)
+[This is a link to the deployed Heroku site](https://note-taker-by-vince.herokuapp.com/)
 
 Screenshots of the site:
 ![This is an image of my main page](./ss.png)
